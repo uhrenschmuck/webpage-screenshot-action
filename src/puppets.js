@@ -17,8 +17,8 @@ const turnOnConsoleCatching = async function (page) {
 };
 
 async function launchBrowser(){
-    const width = parseInt(core.getInput('width')) | 800;
-    const height = parseInt(core.getInput('height')) | 600;
+    const width = parseInt(core.getInput('width')) | 2560;
+    const height = parseInt(core.getInput('height')) | 1600;
     const launchOptions = {
         executablePath: await getBrowserPath(),
         defaultViewport: {width, height},
