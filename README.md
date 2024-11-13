@@ -53,6 +53,8 @@ Here are the inputs you can use to configure the action:
 | selector     | The CSS selector of the element to screenshot. Only used if _mode_ is 'element' or 'scrollToElement'      |                    |
 | xpath        | The XPath selector of the element to screenshot. Only used if _mode_ is 'element' or 'scrollToElement'    |                    |
 | scriptBefore | JavaScript code to be executed before taking a screenshot.                                                |                    |
+| width        | Viewport width                                                                                            | 800                |
+| height       | Viewport height                                                                                           | 600                |
 
 
 #### url

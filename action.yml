@@ -37,6 +37,14 @@ inputs:
     description: 'Output file name/path. If not specified, the screenshot will be saved to "screenshot.png" in the current directory.'
     required: false
     default: screenshot.png
+  width:
+    description: 'Viewport width in pixels.'
+    required: false
+    default: 800
+  height:
+    description: 'Viewport height in pixels.'
+    required: false
+    default: 600
 
 outputs:
   scriptResult:
