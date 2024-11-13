@@ -17,14 +17,12 @@ const turnOnConsoleCatching = async function (page) {
 };
 
 async function launchBrowser(){
-    const width = parseInt(core.getInput('width')) | 2560;
-    const height = parseInt(core.getInput('height')) | 1600;
     const launchOptions = {
         executablePath: await getBrowserPath(),
-        defaultViewport: {width, height},
+        defaultViewport: null,
         headless: true
     }
-    core.info('Launch options: ' + JSON.stringify(launchOptions));
+
     return puppeteer.launch(launchOptions);
 }
 
